@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="relatorio.css">
+</head>
+<body>
+    <h1>Relatório</h1>
+    <div id="lista-registros"></div>    
+
+    <dialog id="modal-editar">
+        <h2>Editar Registro</h2>
+        <form method="dialog">
+            <label for="campo-data">Data:</label>
+            <input type="date" id="campo-data" required><br><br>
+
+            <label for="campo-hora">Hora:</label>
+            <input type="time" id="campo-hora" required><br><br>
+
+            <label for="campo-tipo">Tipo:</label>
+            <select id="campo-tipo" required>
+                <option value="entrada">Entrada</option>
+                <option value="saida">Saída</option>
+                <option value="intervalo">Intervalo</option>
+            </select><br><br>
+
+            <button id="botao-salvar" type="button">Salvar</button>
+            <button id="botao-fechar" type="button">Cancelar</button>
+        </form>
+    </dialog>
+
+    <script src="relatorio.js"></script>
+</body>
+</html>
